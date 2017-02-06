@@ -22,7 +22,13 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/birthday/{month}/{day}")
+     * @Route(
+         "/birthday/{month}/{day}",
+         requirements={
+           "month" = "(0[0-9])|(1[0-2])",
+           "day" = "(0[1-9])|([1-2][0-9])|(3[0-1])",
+         }
+       )
      */
     public function birthdayAction($month, $day)
     {
