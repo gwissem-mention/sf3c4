@@ -7,7 +7,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @Route("/game")
+ * @Route(
+ * "{_locale}/game",
+ * requirements={ "_locale" = "fr|en" }
+ * )
  */
 class GameController extends Controller
 {
