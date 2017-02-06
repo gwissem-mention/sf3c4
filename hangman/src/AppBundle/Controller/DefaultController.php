@@ -9,11 +9,35 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultController extends Controller
 {
     /**
-     * @Route()
+     * @Route("/", name="homepage")
      */
     public function indexAction()
     {
         return $this->render('index.html.twig');
+    }
+
+    /**
+     * @Route("/game", name="game")
+     */
+    public function gameAction()
+    {
+        return $this->render('game.html.twig');
+    }
+
+    /**
+     * @Route("/won", name="won")
+     */
+    public function wonAction()
+    {
+        return $this->render('won.html.twig');
+    }
+
+    /**
+     * @Route("/failed", name="failed")
+     */
+    public function failedAction()
+    {
+        return $this->render('failed.html.twig');
     }
 
     /**
