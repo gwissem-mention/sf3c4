@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hangman Game - You're hanged!</title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/app/css/style.css') }}" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-</head>
-<body>
+{% extends 'base.html.twig' %}
+
+{% block title %} Hangman Game - You're Hanged ! {% endblock %}
+
+{% block body %} 
 <div id="wrapper">
     <div id="header">
         <div id="logo">
@@ -17,7 +13,7 @@
         <div id="menu">
             <ul>
                 <li class="first current_page_item">
-                    <a href="/game/">Game</a>
+                    <a href="{{ url('game') }}">Game</a>
                 </li>
                 <li>
                     <a href="/signup">Register</a>
@@ -68,5 +64,4 @@
     </div>
 </div>
 
-</body>
-</html>
+{% endblock %}
