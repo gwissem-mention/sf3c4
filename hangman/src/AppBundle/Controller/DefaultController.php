@@ -20,4 +20,19 @@ class DefaultController extends Controller
     {
         return $this->render('examples/hello.html.twig', ['name' => $name]);
     }
+
+    /**
+     * @Route("/birthday/{month}/{day}")
+     */
+    public function birthdayAction($month, $day)
+    {
+        $weekdays = [];
+        $birthday = new \DateTime('2017-'.$month.'-'.$day);
+        for ($i = 0; $i < 10; $i++) {
+            $birthday->modify('+'.$i.' years');
+            $weekdays[2017 + $i] = $birthday->format('l');
+        }
+
+        return $this->render('examples/birthday.html.twig', ['weekdays' => $weekdays]);
+    }
 }
