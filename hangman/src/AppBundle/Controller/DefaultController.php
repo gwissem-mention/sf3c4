@@ -14,6 +14,6 @@ class DefaultController extends Controller
      */
     public function helloAction()
     {
-        return new Response('Hello World !');
+        return $this->render('examples/hello.html.twig');
     }
 }
