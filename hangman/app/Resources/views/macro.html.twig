@@ -1,0 +1,9 @@
+{% macro breadcrumb(values) %} 
+  {% for key, url in values %} 
+    {{ key }} 
+    {% if not loop.last %} 
+      > 
+    {% endif %} 
+  {% endfor %}
+  <hr /><br />
+{% endmacro %}

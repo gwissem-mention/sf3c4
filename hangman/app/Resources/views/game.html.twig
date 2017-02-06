@@ -1,4 +1,5 @@
 {% extends 'base.html.twig' %}
+{% import 'macro.html.twig' as utils %} 
 
 {% block title %} Hangman Game {% endblock %}
 
@@ -31,6 +32,7 @@
 
 <div id="page">
 <div id="content">
+{{ utils.breadcrumb({'Home': 'homepage', 'Game': 'game'}) }}
 
     <h2>Guess the mysterious word</h2>
 
