@@ -17,30 +17,6 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/game", name="game")
-     */
-    public function gameAction()
-    {
-        return $this->render('game.html.twig');
-    }
-
-    /**
-     * @Route("/won", name="won")
-     */
-    public function wonAction()
-    {
-        return $this->render('won.html.twig');
-    }
-
-    /**
-     * @Route("/failed", name="failed")
-     */
-    public function failedAction()
-    {
-        return $this->render('failed.html.twig');
-    }
-
-    /**
      * @Route(
      *   "/hello/{name}", 
      *   name="hello_world", 
@@ -50,17 +26,6 @@ class DefaultController extends Controller
     public function helloAction($name)
     {
         return $this->render('examples/hello.html.twig', ['name' => $name]);
-    }
-
-    public function testimonialsAction()
-    {
-        return $this->render('_testimonials.html.twig', [
-            'testimonials' => [
-                'John Doe' => 'I love this game, so addictive!',
-                'Martin Durand' => 'Best web application ever',
-                'Paul Smith' => 'Awesomeness!',
-            ],
-        ]);
     }
 
     /**
