@@ -10,10 +10,14 @@ class DefaultController extends Controller
 {
 
     /**
-     * @Route("/hello/world", name="hello_world")
+     * @Route(
+     *   "/hello/{name}", 
+     *   name="hello_world", 
+     *   defaults={"name": "Stranger"}
+     * )
      */
-    public function helloAction()
+    public function helloAction($name)
     {
-        return $this->render('examples/hello.html.twig');
+        return $this->render('examples/hello.html.twig', ['name' => $name]);
     }
 }

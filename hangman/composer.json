@@ -2,9 +2,10 @@
     "name": "wissem/hangman",
     "license": "proprietary",
     "type": "project",
+    "description": "A hangman game ! ",
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "AppBundle\\": "src/AppBundle"
         },
         "classmap": [
             "app/AppKernel.php",
