@@ -52,6 +52,17 @@ class DefaultController extends Controller
         return $this->render('examples/hello.html.twig', ['name' => $name]);
     }
 
+    public function testimonialsAction()
+    {
+        return $this->render('_testimonials.html.twig', [
+            'testimonials' => [
+                'John Doe' => 'I love this game, so addictive!',
+                'Martin Durand' => 'Best web application ever',
+                'Paul Smith' => 'Awesomeness!',
+            ],
+        ]);
+    }
+
     /**
      * @Route(
          "/birthday/{month}/{day}",

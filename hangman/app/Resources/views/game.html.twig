@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 {% import 'macro.html.twig' as utils %} 
 
-{% block title %} Hangman Game {% endblock %}
+{% block title %} {{ parent() - Play }} {% endblock %}
 
 {% block body %} 
 <div id="wrapper">
