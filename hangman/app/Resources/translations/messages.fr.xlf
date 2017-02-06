@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="63d72051e901c069f8aa1b32aa0c43bb" resname="Game">
+        <source>Game</source>
+        <target>__Game</target>
+      </trans-unit>
+      <trans-unit id="0ba7583639a274c434bbe6ef797115a4" resname="Register">
+        <source>Register</source>
+        <target>__Register</target>
+      </trans-unit>
+      <trans-unit id="99dea78007133396a7b8ed70578ac6ae" resname="Login">
+        <source>Login</source>
+        <target>__Login</target>
+      </trans-unit>
+      <trans-unit id="bbaff12800505b22a853e8b7f4eb6a22" resname="Contact">
+        <source>Contact</source>
+        <target>__Contact</target>
+      </trans-unit>
+      <trans-unit id="59f6c4cb8b802dbcbf28e66a1f0bb4ae" resname="Last Games">
+        <source>Last Games</source>
+        <target>__Last Games</target>
+      </trans-unit>
+      <trans-unit id="06d83af2312487942c9cd1cffd28ea8c" resname="Last players">
+        <source>Last players</source>
+        <target>__Last players</target>
+      </trans-unit>
+      <trans-unit id="27631fdb73d9809f6709bc063cd34bc8" resname="This is your last attempt.|You still have %count% remaining attempts.">
+        <source>This is your last attempt.|You still have %count% remaining attempts.</source>
+        <target>__This is your last attempt.|You still have %count% remaining attempts.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

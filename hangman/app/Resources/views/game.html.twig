@@ -37,7 +37,7 @@
     <h2>Guess the mysterious word</h2>
 
     <p class="attempts">
-        You still have 11 remaining attempts.
+        {{ 'This is your last attempt.|You still have %count% remaining attempts.'|transchoice(11) }}
     </p>
 
     <ul class="word_letters">
